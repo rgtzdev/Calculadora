@@ -21,6 +21,7 @@
 		1A90487A19BE60550077A434 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A90485C19BE60550077A434 /* UIKit.framework */; };
 		1A90488219BE60550077A434 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A90488019BE60550077A434 /* InfoPlist.strings */; };
 		1A90488419BE60550077A434 /* Programa2_calculadoraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A90488319BE60550077A434 /* Programa2_calculadoraTests.m */; };
+		F43359C719BF9A69009C31EB /* NSString+NSString_WS.m in Sources */ = {isa = PBXBuildFile; fileRef = F43359C619BF9A69009C31EB /* NSString+NSString_WS.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		1A90487F19BE60550077A434 /* Programa2_calculadoraTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Programa2_calculadoraTests-Info.plist"; sourceTree = "<group>"; };
 		1A90488119BE60550077A434 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A90488319BE60550077A434 /* Programa2_calculadoraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Programa2_calculadoraTests.m; sourceTree = "<group>"; };
+		F43359C519BF9A69009C31EB /* NSString+NSString_WS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+NSString_WS.h"; path = "Extensions/NSString+NSString_WS.h"; sourceTree = "<group>"; };
+		F43359C619BF9A69009C31EB /* NSString+NSString_WS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+NSString_WS.m"; path = "Extensions/NSString+NSString_WS.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		1A90485E19BE60550077A434 /* Programa2_calculadora */ = {
 			isa = PBXGroup;
 			children = (
+				F43359C419BF9A09009C31EB /* Extensions */,
 				1A90486719BE60550077A434 /* WPAppDelegate.h */,
 				1A90486819BE60550077A434 /* WPAppDelegate.m */,
 				1A90486A19BE60550077A434 /* Main.storyboard */,
@@ -150,6 +154,15 @@
 				1A90488019BE60550077A434 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F43359C419BF9A09009C31EB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F43359C519BF9A69009C31EB /* NSString+NSString_WS.h */,
+				F43359C619BF9A69009C31EB /* NSString+NSString_WS.m */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A90486519BE60550077A434 /* main.m in Sources */,
+				F43359C719BF9A69009C31EB /* NSString+NSString_WS.m in Sources */,
 				1A90486919BE60550077A434 /* WPAppDelegate.m in Sources */,
 				1A90486F19BE60550077A434 /* WPViewController.m in Sources */,
 			);
@@ -457,6 +471,7 @@
 				1A90488919BE60550077A434 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A90488A19BE60550077A434 /* Build configuration list for PBXNativeTarget "Programa2_calculadoraTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +480,7 @@
 				1A90488C19BE60550077A434 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
