@@ -57,12 +57,11 @@
     NSString * enteredNumberThatJustEnteredByClickingAButton = [(UIButton *)sender currentTitle];
     
     double a = [whatIsOnDisplay doubleValue];
-    double b = [enteredNumberThatJustEnteredByClickingAButton doubleValue];
     
-    if(a == 0){
-        self.txtOutput.text = [NSString stringWithFormat:@"%g",b];
+    if( a == 0 && ![whatIsOnDisplay isEqualToString:@"."] ){
+        self.txtOutput.text = [NSString stringWithFormat:@"%@",enteredNumberThatJustEnteredByClickingAButton];
     }else{
-        self.txtOutput.text = [NSString stringWithFormat:@"%g%g",a,b];
+        self.txtOutput.text = [NSString stringWithFormat:@"%@%@",whatIsOnDisplay,enteredNumberThatJustEnteredByClickingAButton];
     }
 
 }//End of actionButtonNumber Method

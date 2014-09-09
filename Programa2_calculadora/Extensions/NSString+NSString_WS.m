@@ -14,7 +14,7 @@
 
     BOOL valid;
     
-    NSCharacterSet * numbers = [NSCharacterSet characterSetWithCharactersInString:@"0123456789"];
+    NSCharacterSet * numbers = [NSCharacterSet characterSetWithCharactersInString:@"0123456789."];
     NSCharacterSet * compar = [NSCharacterSet characterSetWithCharactersInString:res];
     
     valid = [numbers isSupersetOfSet:compar];
